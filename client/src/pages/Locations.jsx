@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import LocationsAPI from '../services/LocationsAPI'
+// import LocationsAPI from '../services/LocationsAPI'
 import unitygrid from '../assets/unitygrid.jpg'
 import '../css/Locations.css'
 
@@ -29,7 +29,7 @@ const Locations = () => {
         polygons.forEach(element => {
             element.addEventListener('mouseover', (event) => {
                 const buttonElement = document.getElementById(`${event.target.id}button`)
-                buttonElement.style.opacity = 1;
+                buttonElement.style.opacity = 100;
             })
 
             element.addEventListener('mouseleave', (event) => {

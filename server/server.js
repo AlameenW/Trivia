@@ -2,21 +2,24 @@ import express from 'express'
 import path from 'path'
 import favicon from 'serve-favicon'
 import dotenv from 'dotenv'
-
+import getLocations from './controllers/locationsController.js'
 // import the router from your routes file
-
+import cors from "cors";
 
 dotenv.config()
 
 const PORT = process.env.PORT || 3000
 
 const app = express()
-
+app.use(cors());
 app.use(express.json())
 
 app.get('/', (req, res) => {
     res.sendFile(path.resolve('./public/index.html'))
 })
+
+app.get('/locations',getLocations)
+
 if (process.env.NODE_ENV === 'development') {
     app.use(favicon(path.resolve('../', 'client', 'public', 'party.png')))
 }

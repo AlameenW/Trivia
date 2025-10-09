@@ -2,7 +2,6 @@ const getAllLocations = async () => {
     try{
         const response = await fetch('http://localhost:3000/locations');
         const locations = await response.json();
-        console.log('Locations loaded successfully');
         return locations.rows;
     }
     catch(error){
@@ -10,5 +9,16 @@ const getAllLocations = async () => {
     }
 }
 
+const getLocationById = async (id) => {
+    try{
+        const response = await fetch(`http://localhost:3000/locations/${id}`)
+        const location = await response.json();
+        return location;
+    }
+    catch(error){
+        console.log(`Error fetching event data ${error}`)
+    }
+}
 
-export default {getAllLocations};
+
+export {getAllLocations, getLocationById};

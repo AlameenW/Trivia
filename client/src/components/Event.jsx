@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import '../css/Event.css'
+import EventsAPI from '../../services/EventsAPI'
 
 const Event = (props) => {
 
@@ -10,39 +11,41 @@ const Event = (props) => {
     useEffect(() => {
         (async () => {
             try {
-                const eventData = await EventsAPI.getEventsById(props.id)
-                setEvent(eventData)
+                const eventData = await EventsAPI.getEventById(props.id);
+                console.log(eventData);
+                setEvent(eventData[0]);
             }
             catch (error) {
+                console.log('Error fetching event data');
                 throw error
             }
         }) ()
     }, [])
 
-    useEffect(() => {
-        (async () => {
-            try {
-                const result = await dates.formatTime(event.time)
-                setTime(result)
-            }
-            catch (error) {
-                throw error
-            }
-        }) ()
-    }, [event])
+    // useEffect(() => {
+    //     (async () => {
+    //         try {
+    //             const result = await dates.formatTime(event.time)
+    //             setTime(result)
+    //         }
+    //         catch (error) {
+    //             throw error
+    //         }
+    //     }) ()
+    // }, [event])
 
-    useEffect(() => {
-        (async () => {
-            try {
-                const timeRemaining = await dates.formatRemainingTime(event.remaining)
-                setRemaining(timeRemaining)
-                dates.formatNegativeTimeRemaining(remaining, event.id)
-            }
-            catch (error) {
-                throw error
-            }
-        }) ()
-    }, [event])
+    // useEffect(() => {
+    //     (async () => {
+    //         try {
+    //             const timeRemaining = await dates.formatRemainingTime(event.remaining)
+    //             setRemaining(timeRemaining)
+    //             dates.formatNegativeTimeRemaining(remaining, event.id)
+    //         }
+    //         catch (error) {
+    //             throw error
+    //         }
+    //     }) ()
+    // }, [event])
 
     return (
         <article className='event-information'>

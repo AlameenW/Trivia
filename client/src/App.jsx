@@ -3,6 +3,7 @@ import { useRoutes, Link } from 'react-router-dom'
 import Locations from './pages/Locations.jsx'
 import LocationEvents from './pages/LocationEvents.jsx'
 import Events from './components/Event.jsx'
+import EventsListing from './pages/EventsListing.jsx'
 import './App.css'
 
 const App = () => {
@@ -29,7 +30,7 @@ const App = () => {
     },
     {
       path: '/events',
-      element: <Events />
+      element: <EventsListing />
     }
   ])
 

@@ -1,10 +1,10 @@
-# web103_unit3_project# WEB103 Project 3 - *Name of App Here*
+# web103_unit3_project# WEB103 Project 3 - *UnityGrid Plaza*
 
-Submitted by: **Your name here**
+Submitted by: **Alameen Adeku**
 
-About this web app: **App description here**
+About this web app: **UnityGrid Plaza is a full-stack web application that helps users discover and explore events at various entertainment venues. The app features an interactive map interface where users can browse different locations and view upcoming events at each venue.**
 
-Time spent: **X** hours
+Time spent: **10** hours
 
 ## Required Features
 
@@ -17,42 +17,29 @@ The following **required** functionality is completed:
   - [x]  **NOTE: Your walkthrough added to the README must include a view of your Render dashboard demonstrating that your Postgres database is available**
   - [x]  **NOTE: Your walkthrough added to the README must include a demonstration of your table contents. Use the psql command 'SELECT * FROM tablename;' to display your table contents.**
 - [x] **The web app displays a title.**
-- [ ] **Website includes a visual interface that allows users to select a location they would like to view.**
-  - [ ] *Note: A non-visual list of links to different locations is insufficient.* 
-- [ ] **Each location has a detail page with its own unique URL.**
-- [ ] **Clicking on a location navigates to its corresponding detail page and displays list of all events from the `events` table associated with that location.**
+- [x] **Website includes a visual interface that allows users to select a location they would like to view.**
+- [x] **Each location has a detail page with its own unique URL.**
+- [x] **Clicking on a location navigates to its corresponding detail page and displays list of all events from the `events` table associated with that location.**
 
 The following **optional** features are implemented:
 
-- [ ] An additional page shows all possible events
-  - [ ] Users can sort *or* filter events by location.
-- [ ] Events display a countdown showing the time remaining before that event
-  - [ ] Events appear with different formatting when the event has passed (ex. negative time, indication the event has passed, crossed out, etc.).
-
-The following **additional** features are implemented:
-
-- [ ] List anything else that you added to improve the site's functionality!
+- [x] An additional page shows all possible events
 
 ## Video Walkthrough
 
-Here's a walkthrough of implemented required features:
-
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+A walkthrough of implemented required features can be found [here]()
 
 <!-- Replace this with whatever GIF tool you used! -->
-GIF created with ...  GIF tool here
+GIF created with ...  Windows Screen Recorder
 <!-- Recommended tools:
 [Kap](https://getkap.co/) for macOS
 [ScreenToGif](https://www.screentogif.com/) for Windows
 [peek](https://github.com/phw/peek) for Linux. -->
 
-## Notes
-
-Describe any challenges encountered while building the app or any additional context you'd like to add.
 
 ## License
 
-Copyright [yyyy] [name of copyright owner]
+Copyright [2025] [Alameen Adeku] 
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
 

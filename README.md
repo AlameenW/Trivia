@@ -1,4 +1,4 @@
-# web103_unit3_project# WEB103 Project 3 - *UnityGrid Plaza*
+# WEB103 Project 3 - *UnityGrid Plaza*
 
 Submitted by: **Alameen Adeku**
 
@@ -27,7 +27,7 @@ The following **optional** features are implemented:
 
 ## Video Walkthrough
 
-A walkthrough of implemented required features can be found [here]()
+A walkthrough of implemented required features can be found [here](https://imgur.com/gallery/unitygrid-plaza-Y4JWgwJ)
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ...  Windows Screen Recorder
